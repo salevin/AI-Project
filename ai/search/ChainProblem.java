@@ -84,7 +84,11 @@ public class ChainProblem extends Problem
      * to come up with a lower bound on the number of moves for this relaxed problem and
      * this will, of course, be a lower bound for our original problem.
      */
+
+        ChainState cs = (ChainState)state;
         int sum=0;
+
+		sum = cs.chains.size();
 
 
 		return sum;
