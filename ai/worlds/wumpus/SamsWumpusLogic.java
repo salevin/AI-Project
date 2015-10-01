@@ -48,6 +48,10 @@ public class SamsWumpusLogic extends WumpusLogic {
                     "neighborwithp($x1,$y1,$x2,$y2)"));
             kb.tell(Logic.parse("~neighborwithp($x1,$y1,$x2,$y2) ->" +
                     "allothersPfree($x1,$y1,$x2,$y2)"));
+
+            kb.tell(Logic.parse("nosmell($x1,$y1) & neighbor($x1,$y1,$x2,$y2) -> wOK($x2,$y2)"));
+            kb.tell(Logic.parse("nobreeze($x1,$y1) & neighbor($x1,$y1,$x2,$y2) -> pOK($x2,$y2)"));
+            kb.tell(Logic.parse("breeze($x1,$y1) & allothersPfree($x1,$y1,$x2,$y2) -> p!($x2,$y2)"));
         }
         catch(Exception e) {System.out.println("Error in building kb");};
     }

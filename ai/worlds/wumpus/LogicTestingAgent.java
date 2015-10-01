@@ -18,7 +18,7 @@ public class LogicTestingAgent extends WumpusAgent {
     
     public LogicTestingAgent() {
     	super();
-    	logic = new DefaultWumpusLogic(4, 4); //Logic
+    	logic = new SamsWumpusLogic(4, 4); //Logic
     }
     
 	/**
