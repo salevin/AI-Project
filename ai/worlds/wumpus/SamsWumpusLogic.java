@@ -51,7 +51,10 @@ public class SamsWumpusLogic extends WumpusLogic {
 
             kb.tell(Logic.parse("nosmell($x1,$y1) & neighbor($x1,$y1,$x2,$y2) -> wOK($x2,$y2)"));
             kb.tell(Logic.parse("nobreeze($x1,$y1) & neighbor($x1,$y1,$x2,$y2) -> pOK($x2,$y2)"));
-            kb.tell(Logic.parse("breeze($x1,$y1) & allothersPfree($x1,$y1,$x2,$y2) -> p!($x2,$y2)"));
+            kb.tell(Logic.parse("breeze($x1,$y1) & allothersPfree($x1,$y1,$x3,$y3) & neighbor($x1,$y1,$x3,$y3) & ~pOK($x3,$y3) -> p!($x3,$y3)"));
+            kb.tell(Logic.parse("smell($x1,$y1) & allothersWfree($x1,$y1,$x3,$y3) & neighbor($x1,$y1,$x3,$y3) & ~wOK($x3,$y3) -> w!($x3,$y3)"));
+            kb.tell(Logic.parse("breeze($x1,$y1) & neighbor($x1,$y1,$x3,$y3) & ~pOK($x3,$y3) -> p?($x3,$y3)"));
+            kb.tell(Logic.parse("smell($x1,$y1) & neighbor($x1,$y1,$x3,$y3) & ~wOK($x3,$y3) -> w?($x3,$y3)"));
         }
         catch(Exception e) {System.out.println("Error in building kb");};
     }
