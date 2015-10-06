@@ -2,6 +2,7 @@ package ai.worlds.wumpus;
 
 import ai.logic.HornKnowledgeBase;
 import ai.logic.Logic;
+import ai.search.Problem;
 import ai.worlds.Location;
 
 import java.util.Vector;
@@ -65,8 +66,12 @@ public class SamsWumpusLogic extends WumpusLogic {
      * @return the move that is closest to the agent's current location.
      */
     public Location closestMove(Vector moves) {
-        // TODO Auto-generated method stub
-        return null;
+        Location closest = (Location) moves.get(0);
+        for (int i = 1; i < moves.size(); i++){
+            Location current = (Location) moves.elementAt(i);
+            if (distance(agentloc, current) < distance(agentloc,closest)){closest = current;}
+        }
+        return closest;
     }
 
     /**
@@ -85,7 +90,8 @@ public class SamsWumpusLogic extends WumpusLogic {
      * @return the sequence of actions which will take the agent to the given location.
      */
     public Vector pathTo(Location loc, Location heading) {
-        // TODO Auto-generated method stub
+        PathProblem path = new PathProblem(agentloc, heading, loc);
+//        return path.successors(path);
         return null;
     }
 }
