@@ -91,7 +91,6 @@ public class SamsWumpusLogic extends WumpusLogic {
      */
     public Vector pathTo(Location loc, Location heading) {
         PathProblem path = new PathProblem(agentloc, heading, loc);
-//        return path.successors(path);
-        return null;
+        return path.solve("A*","0",50).solutionActions();
     }
 }
