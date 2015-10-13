@@ -79,8 +79,11 @@ public class SamsWumpusLogic extends WumpusLogic {
      * @return the location that the agent will move to next.
      */
     public Location nextMove() {
-        // TODO Auto-generated method stub
-        return null;
+        Vector moves = this.okayMoves();
+        Location nextmove;
+        if (moves.size() > 0){  nextmove = closestMove(moves); }
+        else { nextmove = new Location(1,1); }
+        return nextmove;
     }
 
     /**
@@ -91,6 +94,6 @@ public class SamsWumpusLogic extends WumpusLogic {
      */
     public Vector pathTo(Location loc, Location heading) {
         PathProblem path = new PathProblem(agentloc, heading, loc);
-        return path.solve("A*","0",50).solutionActions();
+        return path.solve("No Duplicates Breadth First Search","",50).solutionActions();
     }
 }
