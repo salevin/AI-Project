@@ -18,8 +18,13 @@ public class SamsWumpusAgent extends WumpusAgent {
      * A flag indicating if the wumpus is still alive
      */
     boolean wumpusAlive = true;
+    boolean hasGold = false;
+    Location home = new Location(1,1);
 
-    public SamsWumpusLogic logic;
+    public SamsWumpusAgent() {
+        super();
+        logic = new SamsWumpusLogic(4, 4); //Logic
+    }
 
 
     @Override
@@ -30,8 +35,13 @@ public class SamsWumpusAgent extends WumpusAgent {
         if (p.elementAt(4) =="sound") wumpusAlive=false;
         if (p.elementAt(2) =="glitter"){
             action = "grab";
-            Location home = new Location(1,1);
+            hasGold = true;
             plan = logic.pathTo(logic.agentloc,home);
+        }
+        if (logic.agentloc == home){
+            if (hasGold || logic.okayMoves().isEmpty() ){
+                action = "climb";
+            }
         }
         else if (p.elementAt(3) =="bump") {
             plan.removeAllElements();
@@ -44,7 +54,7 @@ public class SamsWumpusAgent extends WumpusAgent {
             plan.removeElementAt(0);
         }
         else if (p.elementAt(1)=="breeze" && wumpusAlive && p.elementAt(0)=="stench"){
-            logic.percept("stench","breeze");
+            this.update(p);
         }
 
         else if (p.elementAt(1)=="breeze") {
@@ -54,25 +64,24 @@ public class SamsWumpusAgent extends WumpusAgent {
         else if (wumpusAlive && p.elementAt(0)=="stench") {
             logic.percept("stench","");
 
-            plan.removeAllElements();
-            plan.addElement("forward");
-            int i = (int)Math.floor(Math.random()*2);
-            switch (i) {
-                case 0: action = "turn left"; break;
-                case 1: action = "turn right";
+            logic.getStatus();
             }
-        }
+
         else {
-            int i = (int)Math.floor(Math.random()*6);
-            switch (i) {
-                case 0: action = "climb"; break;
-                case 1: action = "forward"; break;
-                case 2: action = "forward"; break;
-                case 3: action = "turn right"; break;
-                case 4: action = "turn left"; break;
-                case 5: action = "shoot";
-            }
+            update(p);
+            Location move = logic.nextMove();
+            plan = logic.pathTo(logic.agentloc, move);
+            System.out.println(plan);
         }
 
+
+    }
+
+    private void update(Vector p) {
+        String b = "", s = "";
+        if(p.elementAt(1)=="breeze") b = "breeze";
+        if(p.elementAt(0)=="stench") s = "stench";
+        logic.percept(s, b);
+        logic.getStatus();
     }
 }

@@ -69,7 +69,7 @@ public class SamsWumpusLogic extends WumpusLogic {
         Location closest = (Location) moves.get(0);
         for (int i = 1; i < moves.size(); i++){
             Location current = (Location) moves.elementAt(i);
-            if (distance(agentloc, current) < distance(agentloc,closest)){closest = current;}
+            if (distance(agentloc, current) < distance(agentloc,closest) && current != closest){closest = current;}
         }
         return closest;
     }
@@ -83,6 +83,7 @@ public class SamsWumpusLogic extends WumpusLogic {
         Location nextmove;
         if (moves.size() > 0){  nextmove = closestMove(moves); }
         else { nextmove = new Location(1,1); }
+        System.out.println(nextmove);
         return nextmove;
     }
 
@@ -94,6 +95,7 @@ public class SamsWumpusLogic extends WumpusLogic {
      */
     public Vector pathTo(Location loc, Location heading) {
         PathProblem path = new PathProblem(agentloc, heading, loc);
+        System.out.println(path.solve("No Duplicates Breadth First Search","",50).solutionActions());
         return path.solve("No Duplicates Breadth First Search","",50).solutionActions();
     }
 }

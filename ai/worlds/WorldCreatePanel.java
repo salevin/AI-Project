@@ -60,7 +60,7 @@ public class WorldCreatePanel extends JPanel implements ActionListener, ItemList
     /**
      * The list of wumpus agents.
      */
-    String[] wumpusStrings = {"Random Wumpus Agent", "Aimless Wumpus Agent", "Logic Testing Agent"};
+    String[] wumpusStrings = {"Random Wumpus Agent", "Aimless Wumpus Agent", "Logic Testing Agent", "Sam Wumpus Agent"};
     
     private GridBagLayout gridbag;
     private GridBagConstraints constraints;
@@ -455,7 +455,8 @@ public class WorldCreatePanel extends JPanel implements ActionListener, ItemList
     	else if (agentName == "Random Wumpus Agent") return new RandomWumpusAgent(); 
     	else if (agentName == "Logic Testing Agent") return new LogicTestingAgent();
 		else if (agentName == "Sam Vacuum Agent") return new SamVacuumAgent();
-    	else  return new AimlessWumpusAgent();
+		else if (agentName == "Sam Wumpus Agent") return new SamsWumpusAgent();
+		else  return new AimlessWumpusAgent();
     }
     
     private class TrialSet extends Thread {
