@@ -32,47 +32,47 @@ public class SamsWumpusAgent extends WumpusAgent {
 
         Vector p = (Vector) percept;
 
+
         if (p.elementAt(4) =="sound") wumpusAlive=false;
         if (p.elementAt(2) =="glitter"){
             action = "grab";
             hasGold = true;
-            plan = logic.pathTo(logic.agentloc,home);
-        }
-        if (logic.agentloc == home){
-            if (hasGold || logic.okayMoves().isEmpty() ){
-                action = "climb";
-            }
-        }
-        else if (p.elementAt(3) =="bump") {
-            plan.removeAllElements();
-            plan.addElement("turn right");
-            plan.addElement("forward");
-            action = "turn right";
+            plan = logic.pathTo(home,body.heading);
         }
         else if (!plan.isEmpty()){
             action = (String)plan.elementAt(0);
             plan.removeElementAt(0);
         }
         else if (p.elementAt(1)=="breeze" && wumpusAlive && p.elementAt(0)=="stench"){
-            this.update(p);
+            update(p);
+            Location move = logic.nextMove();
+            plan = logic.pathTo(move,body.heading);
         }
 
         else if (p.elementAt(1)=="breeze") {
-            logic.percept("","breeze");
-            logic.getStatus();
+            update(p);
+            Location move = logic.nextMove();
+            plan = logic.pathTo(move,body.heading);
         }
         else if (wumpusAlive && p.elementAt(0)=="stench") {
-            logic.percept("stench","");
-
-            logic.getStatus();
+            update(p);
+            Location move = logic.nextMove();
+            plan = logic.pathTo(move,body.heading);
             }
 
         else {
             update(p);
             Location move = logic.nextMove();
-            plan = logic.pathTo(logic.agentloc, move);
-            System.out.println(plan);
+            plan = logic.pathTo(move,body.heading);
         }
+        if (logic.agentloc.equals(home)){
+            System.out.println("hey");
+            update(p);
+            if (hasGold || logic.okayMoves().isEmpty() ){
+                action = "climb";
+            }
+        }
+
 
 
     }

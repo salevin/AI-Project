@@ -95,7 +95,6 @@ public class SamsWumpusLogic extends WumpusLogic {
      */
     public Vector pathTo(Location loc, Location heading) {
         PathProblem path = new PathProblem(agentloc, heading, loc);
-        System.out.println(path.solve("No Duplicates Breadth First Search","",50).solutionActions());
         return path.solve("No Duplicates Breadth First Search","",50).solutionActions();
     }
 }
