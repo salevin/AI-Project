@@ -83,7 +83,6 @@ public class SamsWumpusLogic extends WumpusLogic {
         Location nextmove;
         if (moves.size() > 0){  nextmove = closestMove(moves); }
         else { nextmove = new Location(1,1); }
-        System.out.println(nextmove);
         return nextmove;
     }
 
