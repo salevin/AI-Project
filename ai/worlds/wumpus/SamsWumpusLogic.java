@@ -32,7 +32,7 @@ public class SamsWumpusLogic extends WumpusLogic {
                     if (y<size.y) kb.tell(Logic.parse("neighbor(" + x + "," + y + "," + x + "," +
                             (y+1) + ")"));
                 }
-                catch(Exception e) {};
+                catch(Exception e) {}
             }
         try{
             kb.tell(Logic.parse("wOK(1,1)"));
@@ -72,6 +72,23 @@ public class SamsWumpusLogic extends WumpusLogic {
             if (distance(agentloc, current) < distance(agentloc,closest) && current != closest){closest = current;}
         }
         return closest;
+    }
+
+    /**
+     * Find the wumpus from a list.
+     * @return the location of the wumpus
+     */
+    public Location findWumpus() {
+        for (int x=1; x<=size.x; x++){
+            for (int y=1; y<=size.y; y++){
+                Vector v = (Vector) grid[x][y];
+                String w = (String)v.elementAt(1);
+                if (w=="w!"){
+                    return new Location(x,y);
+                }
+            }
+        }
+        return null;
     }
 
     /**

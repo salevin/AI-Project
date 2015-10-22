@@ -21,6 +21,7 @@ public class SamsWumpusAgent extends WumpusAgent {
     boolean hasGold = false;
     Location home = new Location(1,1);
 
+
     public SamsWumpusAgent() {
         super();
         logic = new SamsWumpusLogic(4, 4); //Logic
@@ -36,6 +37,7 @@ public class SamsWumpusAgent extends WumpusAgent {
         if(p.elementAt(1)=="breeze") b = "breeze";
         if(p.elementAt(0)=="stench") s = "stench";
         logic.percept(s, b);
+        Location wumpusLocation = logic.findWumpus();
 
         if (p.elementAt(4) =="sound") wumpusAlive=false;
         if (p.elementAt(2) =="glitter"){
@@ -44,6 +46,12 @@ public class SamsWumpusAgent extends WumpusAgent {
             plan = logic.pathTo(home,body.heading);
         }
         else {
+            if (wumpusLocation!=null){
+                System.out.println("Found wumpus at " + wumpusLocation);
+                plan = logic.pathTo(wumpusLocation,body.heading);
+                plan.removeElementAt(plan.size()-1);
+                plan.addElement("shoot");
+            }
             if (!plan.isEmpty()) {
                 action = (String) plan.elementAt(0);
                 plan.removeElementAt(0);

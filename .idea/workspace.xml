@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f3b36a5-fd54-4886-9a6d-2b8b29ac6251" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/AI/.idea/workspace.xml" />
     </list>
     <ignored path="AI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,11 +35,41 @@
       <file leaf-file-name="SamsWumpusAgent.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7036083">
-              <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.15238096">
+              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DefaultWumpusLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="WumpusLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SamsWumpusLogic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,8 +104,10 @@
         <option value="$PROJECT_DIR$/ai/search/Puzzle8Problem.java" />
         <option value="$PROJECT_DIR$/ai/search/ChainProblem.java" />
         <option value="$PROJECT_DIR$/ai/worlds/WorldCreatePanel.java" />
-        <option value="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" />
         <option value="$PROJECT_DIR$/ai/worlds/wumpus/LogicTestingAgent.java" />
+        <option value="$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java" />
+        <option value="$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java" />
+        <option value="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" />
         <option value="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java" />
       </list>
     </option>
@@ -88,9 +123,9 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="2" />
-    <option name="width" value="1360" />
-    <option name="height" value="741" />
+    <option name="x" value="-1" />
+    <option name="width" value="1368" />
+    <option name="height" value="743" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -115,6 +150,9 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,9 +227,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -462,7 +497,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445007224121</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Wrumpus 4?">
+      <created>1445347983409</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1445347983409</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TodoView">
@@ -475,26 +516,26 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="2" width="1360" height="741" extended-state="0" />
+    <frame x="-1" y="0" width="1368" height="743" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23825504" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32550335" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32419354" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32885906" sideWeight="0.5022762" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27580646" sideWeight="0.5060606" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.495637" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27669904" sideWeight="0.49707174" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27580646" sideWeight="0.4939394" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19798657" sideWeight="0.49545455" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1410061" sideWeight="0.5177778" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12575758" sideWeight="0.5177778" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.15227273" sideWeight="0.48222223" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5275081" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5258064" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32786885" sideWeight="0.49772382" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -546,14 +587,15 @@
     <MESSAGE value="Wrumpus?" />
     <MESSAGE value="Wrumpus 2?" />
     <MESSAGE value="Wrumpus 3?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrumpus 3?" />
+    <MESSAGE value="Wrumpus 4?" />
+    <option name="LAST_COMMIT_MESSAGE" value="Wrumpus 4?" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="44" />
+      <option name="time" value="46" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -566,13 +608,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/LogicTestingAgent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai/worlds/vacuum/ReactiveVacuumAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -861,13 +896,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8729792">
-          <caret line="75" column="34" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/RandomWumpusAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -890,60 +918,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="73" column="29" selection-start-line="73" selection-start-column="29" selection-end-line="73" selection-end-column="29" />
-          <folding>
-            <element signature="docComment;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;field#kb#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;field#grid#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;field#agentloc#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;field#size#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;field#wumpgrid#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#WumpusLogic#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#makeKB#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#closestMove#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#nextMove#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#pathTo#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#getStatus#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#getStatus#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#succeeded#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#succeeded#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#move#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#move#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#visited#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#visited#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#percept#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#percept#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#display#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#okayMoves#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#okayMoves#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#riskyMoves#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#riskyMoves#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="docComment;method#distance#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#distance#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="class#WumpusGrid#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#WumpusGrid#0;class#WumpusGrid#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#paint#0;class#WumpusGrid#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#addtext#0;class#WumpusGrid#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#PathProblem#0;class#PathProblem#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#goalReached#0;class#PathProblem#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#successors#0;class#PathProblem#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#stateToString#0;class#PathProblem#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#actionToString#0;class#PathProblem#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#rotate#0;class#PathProblem#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="class#PathProblemState#0;class#WumpusLogic#0" expanded="false" />
-            <element signature="method#PathProblemState#0;class#PathProblemState#0;class#WumpusLogic#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/LogicTestingAgent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="31" column="28" selection-start-line="31" selection-start-column="28" selection-end-line="31" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -955,18 +933,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/Pit.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27072757">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.4043062">
-          <caret line="74" column="5" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7036083">
-          <caret line="53" column="21" selection-start-line="53" selection-start-column="21" selection-end-line="53" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.15238096">
+          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

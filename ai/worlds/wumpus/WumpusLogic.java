@@ -79,6 +79,8 @@ public abstract class WumpusLogic
 	 * @return the sequence of actions which will take the agent to the given location.
 	 */
     public abstract Vector pathTo(Location loc, Location heading);
+
+	public abstract Location findWumpus();
     
 	/**
 	 * Analyze the status of each grid cell using the knowledge base.
