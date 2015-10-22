@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f3b36a5-fd54-4886-9a6d-2b8b29ac6251" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/DefaultWumpusLogic.class" afterPath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/DefaultWumpusLogic.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic$PathProblem.class" afterPath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic$PathProblem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic$PathProblemState.class" afterPath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic$PathProblemState.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic$WumpusGrid.class" afterPath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic$WumpusGrid.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic.class" afterPath="$PROJECT_DIR$/out/production/AI/ai/worlds/wumpus/WumpusLogic.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java" afterPath="$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AI/.idea/workspace.xml" afterPath="$PROJECT_DIR$/out/production/AI/.idea/workspace.xml" />
     </list>
     <ignored path="AI.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,13 +36,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="SamsWumpusAgent.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SamsWumpusAgent.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.15238096">
-              <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#2265#2266#0" expanded="true" />
+                <element signature="e#2298#2299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -48,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+              <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -58,17 +64,17 @@
         <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
+              <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SamsWumpusLogic.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SamsWumpusLogic.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+            <state vertical-scroll-proportion="0.6952381">
+              <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -105,10 +111,10 @@
         <option value="$PROJECT_DIR$/ai/search/ChainProblem.java" />
         <option value="$PROJECT_DIR$/ai/worlds/WorldCreatePanel.java" />
         <option value="$PROJECT_DIR$/ai/worlds/wumpus/LogicTestingAgent.java" />
-        <option value="$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java" />
-        <option value="$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java" />
-        <option value="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" />
         <option value="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java" />
+        <option value="$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java" />
+        <option value="$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java" />
+        <option value="$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java" />
       </list>
     </option>
   </component>
@@ -503,7 +509,13 @@
       <option name="project" value="LOCAL" />
       <updated>1445347983409</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Kill the Wrumpus!">
+      <created>1445539903222</created>
+      <option name="number" value="00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1445539903222</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -588,7 +600,8 @@
     <MESSAGE value="Wrumpus 2?" />
     <MESSAGE value="Wrumpus 3?" />
     <MESSAGE value="Wrumpus 4?" />
-    <option name="LAST_COMMIT_MESSAGE" value="Wrumpus 4?" />
+    <MESSAGE value="Kill the Wrumpus!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Kill the Wrumpus!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -940,37 +953,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="82" column="36" selection-start-line="82" selection-start-column="36" selection-end-line="82" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/DefaultWumpusLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+          <caret line="85" column="27" selection-start-line="85" selection-start-column="27" selection-end-line="85" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java">
+    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/WumpusLogic.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="86" column="45" selection-start-line="86" selection-start-column="45" selection-end-line="86" selection-end-column="45" />
+          <caret line="84" column="35" selection-start-line="84" selection-start-column="35" selection-end-line="84" selection-end-column="35" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusAgent.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15238096">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="32" selection-start-line="53" selection-start-column="32" selection-end-line="53" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2265#2266#0" expanded="true" />
+            <element signature="e#2298#2299#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ai/worlds/wumpus/SamsWumpusLogic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6952381">
+          <caret line="120" column="28" selection-start-line="120" selection-start-column="28" selection-end-line="120" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

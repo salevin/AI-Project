@@ -113,4 +113,13 @@ public class SamsWumpusLogic extends WumpusLogic {
         PathProblem path = new PathProblem(agentloc, heading, loc);
         return path.solve("No Duplicates Breadth First Search","",50).solutionActions();
     }
+
+    public void removeW(){
+        for (int x=1; x<=size.x; x++){
+            for (int y=1; y<=size.y; y++){
+                Vector v = (Vector) grid[x][y];
+                v.set(1,"wOK");
+            }
+        }
+    }
 }

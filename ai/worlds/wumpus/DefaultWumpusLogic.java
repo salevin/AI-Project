@@ -82,6 +82,10 @@ public class DefaultWumpusLogic extends WumpusLogic {
 		return null;
 	}
 
+    public void removeW() {
+        // TODO Auto-generated method stub
+    }
+
 	/**
 	 * Determine the sequence of actions which will take the agent to the given location.
 	 * @param loc is the location we wish to travel to.

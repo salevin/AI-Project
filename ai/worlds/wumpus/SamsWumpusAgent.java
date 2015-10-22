@@ -35,11 +35,12 @@ public class SamsWumpusAgent extends WumpusAgent {
         logic.move(body.loc.x, body.loc.y);
         String b = "", s = "";
         if(p.elementAt(1)=="breeze") b = "breeze";
-        if(p.elementAt(0)=="stench") s = "stench";
+        if (p.elementAt(4) =="sound") wumpusAlive=false;
+        if(p.elementAt(0)=="stench" && wumpusAlive) s = "stench";
         logic.percept(s, b);
         Location wumpusLocation = logic.findWumpus();
+        System.out.println("The wumpus is alive?" + wumpusAlive);
 
-        if (p.elementAt(4) =="sound") wumpusAlive=false;
         if (p.elementAt(2) =="glitter"){
             action = "grab";
             hasGold = true;
@@ -47,10 +48,10 @@ public class SamsWumpusAgent extends WumpusAgent {
         }
         else {
             if (wumpusLocation!=null){
-                System.out.println("Found wumpus at " + wumpusLocation);
                 plan = logic.pathTo(wumpusLocation,body.heading);
-                plan.removeElementAt(plan.size()-1);
+                plan.removeElementAt(plan.size() - 1);
                 plan.addElement("shoot");
+                logic.removeW();
             }
             if (!plan.isEmpty()) {
                 action = (String) plan.elementAt(0);
@@ -76,10 +77,6 @@ public class SamsWumpusAgent extends WumpusAgent {
     }
 
     private void update(Vector p) {
-        String b = "", s = "";
-        if(p.elementAt(1)=="breeze") b = "breeze";
-        if(p.elementAt(0)=="stench") s = "stench";
-        logic.percept(s, b);
         logic.getStatus();
     }
 }
