@@ -80,10 +80,6 @@ public abstract class WumpusLogic
 	 */
     public abstract Vector pathTo(Location loc, Location heading);
 
-	public abstract Location findWumpus();
-
-    public abstract void removeW();
-    
 	/**
 	 * Analyze the status of each grid cell using the knowledge base.
 	 */
